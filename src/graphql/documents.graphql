@@ -1,0 +1,12 @@
+fragment userFields on User {
+  id
+  username
+  email
+  role
+}
+
+query AllUsers {
+  allUsers {
+    ...userFields
+  }
+}

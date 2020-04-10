@@ -1,0 +1,12 @@
+overwrite: true
+schema: src/graphql/schema.graphql
+documents: src/graphql/documents.graphql
+generates:
+  src/graphql/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typed-document-node
+    config:
+      scalars:
+        timestamptz: string
